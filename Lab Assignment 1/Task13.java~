@@ -1,0 +1,15 @@
+//Task-13
+public class Task13{
+  public static void main(String[]arg){
+    int hour = 5;
+    int minute = 56;
+    int second = 23;
+    int total_second = (hour*60*60)+minute*60+second;
+    int meter = 1247;
+    double km = 1247/1000;
+    double mile = meter/1609;
+    double total_hour = (total_second/60)/60;
+    System.out.println("Your velocity in km/h is "+ meter/total_hour);
+    System.out.println("Your velocity in miles/h is "+ mile/total_hour);
+  }
+}
