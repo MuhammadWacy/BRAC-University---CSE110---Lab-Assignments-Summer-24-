@@ -1,0 +1,44 @@
+//Task-11
+
+import java.util.Scanner;
+
+public class Task11{
+  public static void main(String[]args){
+    Scanner sc = new Scanner(System.in);
+    
+    System.out.println("Enter the number of inputs : ");
+    int n = sc.nextInt();
+    
+    int i=0;
+    int maximum;
+    int minimum;
+    int count=0;
+    int sum=0;
+    while(i<n){
+      int num = sc.nextInt();
+      if(i==0){
+        maximum=num;
+        minimum=num;
+      }else{
+        if(num>maximum){
+          maximum=num;
+        }else if(num<minimum){
+          minimum=num;
+        }
+      }
+      if(num>0 && num%2==0){
+        sum+=num;
+        count++;
+      }
+    }
+    double avg;
+    if(count==0){
+      avg=0;
+    }else{
+      avg = (double)sum/count;
+    }
+    System.out.println("Max: "+maximum);
+    System.out.println("Min: "+minimum);
+    System.out.println("Average: "+avg);
+  }
+}
