@@ -1,0 +1,24 @@
+//Task-8
+
+import java.util.Scanner;
+
+public class Task8{
+  public static void main(String[]args){
+    Scanner sc = new Scanner(System.in);
+    
+    System.out.println("n = ");
+    int num = sc.nextInt();
+    int res = 0;
+    int times = 0;
+    
+    int i = 0;
+    while(i<num){
+      if(res%3!=0){
+        res= 5*times;
+        System.out.println(res);
+        times++;
+      }
+      i = res;
+    }
+  }
+}
