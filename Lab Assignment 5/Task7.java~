@@ -1,0 +1,22 @@
+//Task-7
+import java.util.Scanner;
+
+public class Task7{
+  public static void main(String[]args){
+    Scanner sc = new Scanner(System.in);
+    
+    int height = sc.nextInt();
+    
+    for(i=1; i<=height; i++){
+      for(space=1; j<=(height-space); space++){
+        System.out.println(" ");
+      }
+      for(j=1; j<=i; j++;){
+        System.out.println(j);
+      }
+      for(space=1; j<=(height-space); space++){
+        System.out.println(" ");
+      }
+    }
+  }
+}
