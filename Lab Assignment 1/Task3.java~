@@ -1,9 +1,0 @@
-public class Task3{
-  public static void main(String[]args){
-    int radius = 4;
-    double circumference = 2*3.1416*radius;
-    double area = 3.1416*radius*radius;
-   System.out.println("The circumference of the circle is : "+circumference);
-   System.out.println("The area of the circle is : "+area);
-  }
-}

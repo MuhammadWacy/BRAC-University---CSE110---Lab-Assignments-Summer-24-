@@ -1,7 +1,0 @@
-public class Task5{
-  public static void main(String[]args){
-    int inches = 69;
-    double meter = inches*0.0254;
-    System.out.println(inches+" inch is "+meter+"meters");
-  }
-}

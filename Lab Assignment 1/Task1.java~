@@ -1,6 +1,0 @@
-public class Task1{
-  public static void main{
-  int hungry = 3;
-  System.out.println(hungry);
-  }
-}
