@@ -1,0 +1,46 @@
+//Task-2
+
+import java.util.Scanner;
+
+public class Task2{
+  public static void modifyStrings(String s, String s1, String s2){
+    
+    int count = 0;
+    String modified = "";
+    String final_word = "";
+    for(int i=0; i<s.length(); i++){
+      char c = s.charAt(i);
+      for(int j=0; j<s1.length(); j++){
+        char d = s1.charAt(j);
+          if( c == d){
+          modified+=c;
+          count++;
+          if(count%3 == 0 && count!=0){
+            final_word+=modified;
+            modified=s2;
+            for(int k = 0; k<modified.length(); k++){
+              char e = modified.charAt(k);
+              if(k<modified.length()-3){
+                final_word+=e;
+              }
+              else if(k == modified.length()-1){
+                final_word+=s2;
+              }
+            }
+          }
+        }else{
+          count = 0;
+          modified+=c;
+        }
+      }
+    }
+    final_word+=modified;
+    System.out.println(final_word);
+  }
+  
+  public static void main(String[]args){
+    Scanner sc = new Scanner(System.in);
+    
+    modifyStrings(sc.nextLine(), sc.nextLine(), sc.nextLine());
+  }
+}
